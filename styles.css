@@ -126,7 +126,7 @@ body{
 .card-image{
   /*border: 15px solid #1F2937;
   border-radius: 12px;*/
-  padding: 36px;
+  padding: 24px;
   object-fit: cover;
   width: 300px;
   height: 250px;
