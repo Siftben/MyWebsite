@@ -88,7 +88,7 @@ body{
   font-size: larger;
 }
 
-.projects h1{
+.projects > h1{
   padding-bottom: 24px;
 }
 
@@ -119,16 +119,17 @@ body{
 @media screen and (max-width: 900px) {
   .card-group {
     flex-direction: column;
+    gap: 18px;
   }
 }
 
 .card-image{
   /*border: 15px solid #1F2937;
   border-radius: 12px;*/
-  padding: 12px;
+  padding: 36px;
   object-fit: cover;
-  width: 250px;
-  height: 200px;
+  width: 300px;
+  height: 250px;
 }
 
 .quote{
