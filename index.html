@@ -1,95 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <div class="header">
+          <nav id="navbar" class="topnav">
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#projects" class="nav-link">Work</a>
+            <a href="#welcome" class="nav-link">About</a>
+          </nav>
 
-    <header id="header">
+            <div class="hero" id="welcome">
+                <div class="hero-text">
+                    <strong class="hero-title">Hello! I am Yobel Octavinus</strong>
+                    <h1>a Programmer</h1>
+                    <button type="submit">See More</button>
+                </div>
 
-      <nav id="navbar" class="topnav">
-        <a href="#contact" class="nav-link">Contact</a>
-        <a href="#projects" class="nav-link">Work</a>
-        <a href="#welcome" class="nav-link">About</a>
-      </nav>
+            </div>
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    />
-      <link rel="stylesheet" href="styles.css" />
-    
-    </header>
-    
-  </head>
+        </div>
+          
+        <section id="projects" class="projects">
+          <h1>My Portofolio</h1>
+  
+          <div class="card-group">
 
-  <body>
-    <main>
+            <div class="card">
+              <div class="content">
+                <a href="https://siftben.itch.io/" target=”_blank”>
+                  <img src="itchio.PNG" alt="portofolio1" class="card-image">
+                  <h3>Itch.io</h3>
+                </a>
+              </div>
+            </div>
 
-      <section id="welcome" class="welcome">
-        
-          <div class="hero-text">
-            <h1>Hello! I am Yobel Octavinus</h1>
-            <h2>a web developer</h2>
+            <div class="card">
+              <div class="content">
+                <a href="https://siftben.github.io/Etch-A-Sketch/" target=”_blank”>
+                  <img src="etchasketch.PNG" alt="portofolio2" class="card-image">
+                  <h3>Etch-A-Sketch</h3>
+                </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="content">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt="portofolio3" class="card-image">
+                <h3>Search Engine</h3>
+              </div>
+            </div>
+
           </div>
-        
+  
       </section>
 
-      <section id="projects" class="projects">
-        <h1>Portofolio</h1>
-
-          <div class="row">
-      <div class="column">
-        <div class="content">
-          <a href="https://codepen.io/freeCodeCamp/full/zNqgVx">
-            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="portofolio1" class="project-tile">
-            <h3>Tribute Page</h3>
-          </a>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <a src="https://codepen.io/freeCodeCamp/full/zNqgVx">
-            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="portofolio2" >
-            <h3>Calculator</h3>
-          </a>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt="portofolio3" >
-          <h3>Search Engine</h3>
-        </div>
-      </div>
-    </div>
-
-      </section>
-
-
-    </main>
-  </body>
-
-  <footer>
-
-    <section id="contact" class="contact">
-      <div class="contact-bg">
-        <div class="hero-text">
-          <h1>Here some ways to contact me!</h1>
-          <a rel="noopener" href="https://www.facebook.com/freecodecamp/" id="profile-link" target="_blank" >
-          <i class="fab fa-facebook-f"></i>
-          </a>
-          <a rel="noopener" href="https://twitter.com/freecodecamp/" id="profile-link" target="_blank">
-          <i class="fab fa-twitter"></i>
-          </a>
-          <a rel="noopener" href="https://instagram.com/freecodecamp" id="profile-link" target="_blank">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a rel="noopener" href="https://www.linkedin.com/school/free-code-camp/" id="profile-link" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-    
-  </footer>
+          <div class="quote">
+            <p>
+              This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space
+              , or maybe people will actually read it. Who knows? All I know is that it looks nice.
+            </p>
+            <h3>
+              -Thor, God of Thunder
+            </h3>
+          </div>        
+          
+          <div class="footer">
+            Copyright © Yobel Octavinus
+          </div>
+    </body>
 </html>

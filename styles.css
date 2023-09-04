@@ -1,169 +1,145 @@
+*{
+  font-family: Roboto, sans-serif;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.header{
+  background-color: #1F2937;
+  color: white;
+}
+
+.header-title{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: darkred;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-  
-  /* Style the links inside the navigation bar */
+  background-color: #1F2937;
+  position: fixed;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
 .topnav a {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #2c2d30;
-  }
-  
-  body, html {
-      height: 100%;
-      background-color: #313336;
-  }
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
 
-  .welcome{
-    height: 500px;
-  
-    /* Position and center the image to scale nicely on all screens */
-    background-color: #313336;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 50px;
-  }
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #2c2d30;
+}
 
-    /* Place text in the middle of the image */
-  .hero-text {
-    font-family: "Verdana";
-    font-size: x-large;
-    text-align: center;
-    color: #f0f0f0;
-    padding: 150px;
-  }
-  
-  .hero-text h2{
-    color:#bf4351;
-    font-style:italic;
-  }
+body{
+  margin: 0;
+  text-align: center;
+}
 
-  .projects{
-    /* Set a specific height */
-    height: 100%;
+.hero{
+  height: inherit;
+  width: inherit;
+  padding: 200px 0 200px 0;
+}
+
+.hero-title{
+  font-size:48px;
+}
+
+.hero button{
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #3882F6;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  padding: 8px;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.hero-text h1{
+  color: #3882F6;
+  font-style: italic;
+  font-size:48px;
+}
+
+.projects{
+  background-color:#e5e7eb;
+  padding: 48px;
+
+  /* Set a specific height */
+  height: 100%;
     
-    /* Position and center the image to scale nicely on all screens */
-    background-color: #be3144;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 20px;
-    font-size: larger;
-  }
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: larger;
+}
 
-  .row {
-    margin: 8px -16px;
-  }
-  
-  /* Add padding BETWEEN each column (if you want) */
-  .row,
-  .row > .column {
-    padding: 8px;
-  }
-  
-  /* Create four equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 25%;
-    text-align: center;
-    margin-left: 65px;
-    
-  }
-  
-  /* Clear floats after rows */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    margin-bottom: 30px;
-  }
-  
-  /* Content */
-  .content {
-    background-color:#313336 ;
-    padding: 10px;
-    width:100%;
-    color: white;
-  }
+.card-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
 
-  a{
-    font-style: normal;
-    text-decoration: none;
-  }
-  
-  .content a:visited{
-    color: white;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 900px) {
-    .column {
-      width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
-  
-  i{
-    padding: 5px 5px 5px 5px;
-    font-size: 3rem;
-    grid-template-columns: repeat(5, 1fr);
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-    align-items: center;
-    text-decoration:none;
-    color:linen;
-  }
+  padding-bottom: 108px;
+  color: black;
+}
 
-  img{
-    object-fit: cover;
-    width: 300px;
-    height: 250px;
-    border: 15px solid #555;
-  }
+.content {
+  background-color:#313336 ;
+  padding: 4px;
+  border-radius: 4px;
+  color: white;
 
-  .projects h1{
-    text-align: center;
-    color: white;
-  }
+  width: 100%;
+  height: 100%;
+}
 
-  footer{
-    
-    /* Set a specific height */
-    height: 50%;
-  
-    /* Position and center the image to scale nicely on all screens */
-    background-color: #313336;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-  }
+.content a{
+  color: white;
+}
 
-  footer .hero-text{
-    font-family: "Verdana";
-    font-size: x-large;
-    text-align: center;
-    color: #f0f0f0;
-    padding: 20px;
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .card-group {
+    flex-direction: column;
   }
+}
 
+.card-image{
+  border: 15px solid #1F2937;
+  border-radius: 12px;
+  object-fit: cover;
+  width: 300px;
+  height: 250px;
+}
+
+.quote{
+  padding: 100px 240px 100px 240px;
+  background-color: #e5e7eb;
+}
+
+.quote p{
+  font-size: 36px;
+  font-style: italic;
+}
+
+.footer{
+  background-color: #1F2937;
+  text-align: center;
+  color: white;
+  padding: 16px;
+}
